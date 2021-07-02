@@ -7,6 +7,7 @@ namespace NunitTestingPrograms
     /// P3- Converts the temperature as celsius to fahrenheit and vice verse
     /// P4- Calculating the monthly payment 
     /// P5- Calculating square root of the number
+    /// P6- Decimal to binary conversion
     /// </summary>
     class Program
     {
@@ -18,6 +19,7 @@ namespace NunitTestingPrograms
             Console.WriteLine("3 - Temperature Conversion");
             Console.WriteLine("4 - Monthly Payment");
             Console.WriteLine("5 - Square Root");
+            Console.WriteLine("6 - Decimal to binary Conversion");
             Console.WriteLine("Enter you choice:");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -45,6 +47,11 @@ namespace NunitTestingPrograms
                     SquareRoot.ReadInput();
                     break;
 
+                case 6:
+                    DecimalToBinary decimalToBinary = new DecimalToBinary();
+                    decimalToBinary.ReadInput();
+                    break;
+
                 default:
                     break;
             }
@@ -52,6 +59,7 @@ namespace NunitTestingPrograms
         }
     }
 }
+
 
 
 
